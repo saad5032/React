@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.homepage{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  /* background-color:  rgb(128, 128, 128,0.1); */
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+} 
+
+.col1,.col2{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@media (max-width: 800px) {
+  .homepage {
+    flex-direction: column;
+  }
+}
+
+ul{
+  list-style-type: none;
+}
+
+.leftside .sec{
+  /* color: black; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px ;
+  width: 500px;
+  min-height: 400px;
+  margin-left: 40px;
+
+}
+
+
+
+.image{
+  width: 40vmin;
+  height: 60vmin;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 450ms;
+} 
+.image:hover{
+  transform: scale(1.08);
+}
+
+#img{
+  display: flex;
+  overflow-y: hidden;
+  gap: 4vmin;
+  padding-top: 10px;
+  width: 600px
+}
+
+
+.rightside {
+  background: white;
+  margin: 100px 100px 100px 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 400px;
+  min-width: 400px;
+  border-radius: 10px;
+  filter: drop-shadow(10px 10px 15px #111);
+  overflow: hidden;
+}
+
+section::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color:rgb(128, 128, 128);
+  border-radius: 6px;
+}
+.rightside .chatArea{
+  margin: 10px 10px 0px 10px;
+  height: 270px;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #f0f0f0;
+}
+
+
+.rightside h2{
+  background-color: rgba(0, 0, 128,0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.col2 .special{
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.rightside h2 button{
+  position: fixed;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+
+}
+
+.rightside ul{
+  display: flex;
+  flex-direction: column;
+}
+
+ul .UserReceive{
+  padding: 5px;
+  background: #f2f2f2;
+  align-self: flex-start;
+  border-radius: 4px;
+  margin: 5px;
+}
+ul .UserSend{
+  background-color: rgba(0, 0, 128,0.8);
+  color: white;
+  padding: 5px;
+  align-self: flex-end;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+
+.rightside .User{
+position: fixed;
+bottom: 0;
+width: 95%;
+margin: 2px;
+padding: 4px;
+background: #f2f2f2;
+border-top: 2px solid black;
+border-radius: 5px;
+}
+.textArea{
+  position: relative;
+  width: 95%;
+  padding: 2px;
+  /* width: 350px; */
+  height: 50px;
+  align-self: flex-end;
+  bottom: 0px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+#Request{
+  position: absolute;
+  top: 15px;
+  margin-left: 2px;
+  padding: 2px;
+  color: blue;
+  background-color: rgba(0, 0, 128, 0.5);
+  border-radius: 50px;
+  cursor: pointer;
+}
