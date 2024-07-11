@@ -1,0 +1,311 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* styling navbar.jsx */
+.navbar{
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  padding: 20px;
+}
+
+/* Styling a is nothing but styling link tags in navbar.jsx */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+.navbar a:hover{
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+
+.navbar div{
+  align-self: center;
+}
+
+/* styling footer.jsx */
+footer{
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #333;
+}
+
+
+/* styling search.jsx */
+.header{
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.header h1{
+  margin-bottom: 10px;
+}
+
+input[type = "text"] {
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: large;
+}
+
+button{
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit{
+  background-color: black;
+  color: white;
+}
+
+.clear {
+  background-color: grey;
+  color: white;
+}
+
+/* styling users.jsx */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side{
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+img {
+  padding: 10px;
+  /* background-color: rgb(62, 62, 62); */
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.row .side a {
+  text-decoration: none;
+  color: white;
+  background-color: dimgrey;
+  padding: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 300px;
+  flex-wrap: nowrap;
+  margin: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-basis: 30%;
+  padding: 20px;
+  margin-right: 0;
+  text-align: center;
+  font-family: arial;
+}
+
+.card2 {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  flex-basis: 60%;
+  text-align: left;
+  font-family: arial;
+  line-height: 50px;
+
+}
+
+.card2 h2 {
+  margin-top: 10px;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.card h1 {
+  font-size: 50px;
+  background-color: #ddd;
+}
+
+li {
+  font-size: 25px;
+  list-style-position: inside;
+}
+
+.info {
+  margin: 10px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.description > *{
+  display: grid;
+  grid-template-columns: 90px 120px;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+
+/* Forms CSS */
+
+input[type=text],input[type=email],input[type=date],input[type=time], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.alert-success {
+  color: green;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.alert-danger {
+  color: red;
+  padding: 10px;
+}
+
+
+
+.formbold-mb-5 {
+  margin-bottom: 20px;
+}
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formbold-form-input[type="text"],.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: gray;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
